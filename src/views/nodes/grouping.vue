@@ -136,8 +136,9 @@ export default {
     },
     //点击组数查看详情
     groupInfoMore(row) {
+      console.log(row)
       let param = {};
-      param.regionNum = row.regionNum;
+      param.nodeId = row.nodeHashId;
       this.dialogGroupInfoVisible = true;
       queryGroupInfo(param)
         .then(res => {

@@ -2,36 +2,62 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <title>PTFS后台管理工具</title>
-  <link href="https://cdn.bootcss.com/element-ui/2.4.11/theme-chalk/index.css" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/v-charts/lib/style.min.css"> -->
-  <style>
-    .myownStyle  .el-submenu__title{
-      color: #ffffff;   
-  }
-  .myownStyle .el-submenu__title .el-icon-message{
-    color: #ffffff;   
-  }
-  .myownStyle .el-submenu [class^=el-icon-]{
-    color: #ffffff;  
-  }
-  </style>
+    <meta charset="utf-8">
+    <title>PTFS后台管理工具</title>
+    <!-- <link href="https://cdn.bootcss.com/element-ui/2.9.0/theme-chalk/index.css" > -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/v-charts/lib/style.min.css"> -->
+    <style>
+        .myownStyle .el-submenu__title {
+            color: #ffffff;
+            background-color: rgb(73, 78, 136);
+            ;
+        }
+        
+        .myownStyle .el-submenu__title .el-icon-message {
+            color: #ffffff;
+        }
+        
+        .myownStyle .el-submenu [class^=el-icon-] {
+            color: #ffffff;
+        }
+        
+        .el-submenu .el-menu-item {
+            height: 45px;
+            line-height: 45px;
+        }
+        
+        .el-menu-item,
+        .el-submenu__title {
+            height: 45px;
+            line-height: 45px;
+        }
+        
+        .el-submenu.is-active .el-submenu__title {
+            /* background: #545c64; */
+            /* // background-color: rgb(76, 112, 219); */
+        }
+        
+        .myownStyle .el-submenu .el-menu-item {
+            background-color: rgb(73, 78, 136);
+        }
+    </style>
 
 
 </head>
 
 <body>
-  <div id="app">
+    <div id="app">
 
-  </div>
-  <!-- built files will be auto injected -->
-  <script src="https://cdn.bootcss.com/vue/2.5.22/vue.min.js"></script>
+    </div>
+    <!-- built files will be auto injected -->
+    <script src="https://cdn.bootcss.com/vue/2.5.22/vue.min.js"></script>
     <script src="https://cdn.bootcss.com/vue-router/3.0.1/vue-router.min.js"></script>
-  <script src="https://cdn.bootcss.com/element-ui/2.4.11/index.js"></script>
-  <script src="https://cdn.bootcss.com/axios/0.15.3/axios.min.js"></script>
-  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
-  <!-- <script src="//cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+    <!-- <script src="https://cdn.bootcss.com/element-ui/2.9.0/index.js"></script> -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <script src="https://cdn.bootcss.com/axios/0.15.3/axios.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- <script src="//cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/v-charts/lib/index.min.js"></script> -->
 
 </body>

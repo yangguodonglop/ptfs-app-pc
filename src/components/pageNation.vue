@@ -3,7 +3,7 @@
       @size-change="handleSizeChange"
       @current-change="handleCurrentChange"
        :current-page.sync="pager[props.page]"
-      :page-sizes="[100, 200, 300, 400]"
+      :page-sizes="[10, 20, 30, 40]"
       :page-size="100"
       layout="total, sizes, prev, pager, next, jumper"
       :total="pager[props.total]">

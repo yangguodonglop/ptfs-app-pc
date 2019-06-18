@@ -9,9 +9,9 @@ import App from './App'
 //import Vuex from 'vuex'
 import VCharts from 'v-charts'
 import common from "./common/js/util.js";
-Vue.prototype.common=common
-//import NProgress from 'nprogress'
-//import 'nprogress/nprogress.css'
+Vue.prototype.common = common
+    //import NProgress from 'nprogress'
+    //import 'nprogress/nprogress.css'
 import routes from './routes'
 // import Mock from './mock'
 // Mock.bootstrap();
@@ -21,6 +21,11 @@ import routes from './routes'
 //Vue.use(VueRouter)
 //Vue.use(Vuex)
 Vue.use(VCharts)
+import echarts from 'echarts'
+
+Vue.prototype.$echarts = echarts
+
+Vue.use(echarts)
 
 //import axios from 'axios';
 //import vuePopper from 'element-ui/lib/utils/vue-popper';
@@ -31,7 +36,7 @@ Vue.use(VCharts)
 import "babel-polyfill";
 
 const router = new VueRouter({
- routes
+    routes
 })
 
 // router.beforeEach((to, from, next) => {
@@ -52,11 +57,10 @@ const router = new VueRouter({
 // });
 
 new Vue({
-  //el: '#app',
-  //template: '<App/>',
-  router,
-  //store,
-  //components: { App }
-  render: h => h(App)
+    //el: '#app',
+    //template: '<App/>',
+    router,
+    //store,
+    //components: { App }
+    render: h => h(App)
 }).$mount('#app')
-

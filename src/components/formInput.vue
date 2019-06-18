@@ -1,12 +1,12 @@
 <template>
     <el-form-item :label="labelName">
-         <el-input v-model="inputText" :placeholder="inputText"></el-input>
+         <el-input v-model="inputText" placeholder="inputText"></el-input>
      </el-form-item>
 </template>
 
 <script>
 export default {
-  props: ["labelName", "inputText"]
+  props: ["labelName", "inputText","inputTextactive"]
 };
 </script>
 
